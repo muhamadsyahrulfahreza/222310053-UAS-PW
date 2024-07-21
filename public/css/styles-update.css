@@ -1,0 +1,90 @@
+.update-container {
+    text-align: left; /* Memastikan teks berada di tengah */
+    background-color: #d9d9d9;
+}
+
+.update-container h2 {
+    display: inline-block; /* Mengubah elemen h2 menjadi inline-block */
+    position: relative; /* Mengatur posisi relatif untuk h2 */
+    color: #393c78; /* Warna teks */
+    margin: 0; /* Menghapus margin bawaan dari h2 */
+    margin-top: 20px;
+    text-decoration: underline;
+    margin-left: 25px;
+}
+
+.update-container h2::after {
+    content: ""; /* Menambahkan konten kosong pada pseudo-element */
+    position: absolute; /* Mengatur posisi absolut untuk pseudo-element */
+    left: 0; /* Mulai dari posisi kiri */
+    right: 0; /* Sampai ke posisi kanan */
+    bottom: -2px; /* Jarak dari bawah teks */
+    height: 2px; /* Ketebalan underline */
+    background-color: #393c78; /* Warna underline */
+    z-index: -1; /* Menempatkan di belakang teks */
+}
+
+.image-grid {
+    display: flex; /* Mengatur tata letak flexbox */
+    justify-content: center; /* Menyusun gambar di tengah horizontal */
+    margin-top: 20px; /* Memberikan margin atas antara judul dan gambar */
+    overflow: hidden; /* Menyembunyikan overflow */
+    width: 100%; /* Lebar penuh */
+}
+
+.image-scroll-wrapper-update {
+    display: flex;
+    gap: 15px; /* Mengurangi jarak antara elemen */
+    overflow-x: auto; /* Scroll secara horizontal */
+    scrollbar-width: none; /* Menyembunyikan scrollbar Firefox */
+    -ms-overflow-style: none; /* Menyembunyikan scrollbar IE/Edge */
+}
+
+.image-scroll-wrapper-update::-webkit-scrollbar {
+    display: none; /* Menyembunyikan scrollbar Chrome/Safari */
+}
+
+.image-scroll-wrapper-update figure {
+    display: flex; /* Menggunakan Flexbox */
+    flex-direction: column; /* Susun secara vertikal */
+    align-items: center; /* Menyusun konten figure secara vertikal di tengah */
+    flex: 0 0 calc(25% - 10px); /* Lebar 1/4 dari kontainer dikurangi gap */
+    box-sizing: border-box; /* Menghitung padding dan border dalam width */
+    margin-bottom: 15px; /* Mengurangi jarak antara setiap figure */
+}
+
+.image-scroll-wrapper-update img {
+    width: 70%; /* Atur lebar gambar penuh dalam figure */
+    height: auto; /* Mengatur tinggi gambar secara proporsional */
+    border-radius: 10px;
+}
+
+.image-scroll-wrapper-update figcaption {
+    text-align: justify; /* Mengatur teks agar justify */
+    margin-top: 10px; /* Memberikan jarak antara gambar dan teks */
+    width: 70%; /* Lebar figcaption */
+    line-height: 1.5; /* Menambahkan spasi antarbaris */
+    display: flex; /* Menggunakan flexbox */
+    flex-direction: column; /* Susun teks secara vertikal */
+    align-items: flex-start; /* Menyusun teks ke kiri */
+}
+
+.image-scroll-wrapper-update figcaption p1,
+.image-scroll-wrapper-update figcaption p2 {
+    margin: 0; /* Menghapus margin bawaan */
+    font-size: 14px; /* Ukuran font */
+    text-align: left; /* Mengatur teks ke kiri */
+}
+
+.image-scroll-wrapper-update figcaption p1 {
+    font-weight: bold; /* Menjadikan teks lebih tebal */
+    margin-bottom: 5px; /* Jarak bawah antara p1 dan p2 */
+    color: black;
+}
+
+.image-scroll-wrapper-update figcaption p2 {
+    font-style: italic; /* Membuat teks miring */
+    color: #666; /* Warna teks abu-abu */
+    margin-top: auto; /* Menggeser p2 ke bawah */
+    margin-bottom: 20px;
+}

@@ -1,0 +1,71 @@
+/* fakultas.blade.php specific styles */
+.fasilitas-container {
+    padding-left: 20px; /* Jarak kiri dari container */
+    display: flex; /* Mengatur tata letak flexbox */
+    align-items: flex-start; /* Posisi konten container di atas */
+}
+
+.fasilitas-container h1 {
+    margin: 0; /* Menghapus margin bawaan dari h1 */
+    color: #393c78;
+    font-size: 60px;
+}
+
+.fasilitas-container p {
+    font-size: 25px; /* Ukuran font untuk paragraf */
+    margin-right: 20px; /* Memberikan jarak antara teks dan gambar */
+    font-weight: bold;
+}
+
+.fasilitas-container p2 {
+    font-weight: bold;
+}
+
+.text-container {
+    margin-left: 80px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: left;
+}
+
+.image-container {
+    background-color: #393c78;
+    padding: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    flex: 1;
+    overflow-x: auto; /* Mengatur agar konten dapat di-scroll secara horizontal */
+    display: flex; /* Mengatur tata letak flexbox untuk memungkinkan scroll */
+    align-items: center; /* Posisi konten di tengah vertikal */
+    margin-left: 100px;
+}
+
+.image-scroll-wrapper {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.image-container img {
+    width: 230px; /* Atur lebar gambar sesuai kebutuhan */
+    height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aslinya */
+    flex: 1; /* Memungkinkan gambar memanfaatkan ruang yang tersedia di dalam flex container */
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; /* Membuat figure fleksibel dan berbagi ruang secara merata */
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 23px;
+    color: white; /* Menyesuaikan warna teks sesuai dengan background */
+    margin-top: 10px; /* Memberikan jarak antara gambar dan teks */
+}

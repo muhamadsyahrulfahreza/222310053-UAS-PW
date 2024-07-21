@@ -1,0 +1,169 @@
+/* nav */
+.navigation-container {
+    display: flex;
+    justify-content: flex-end; /* Menempatkan item nav di sebelah kanan */
+    background-color: #393c78; /* Warna latar belakang navbar */
+    z-index: 1000; /* Pastikan navbar tetap di atas konten lain */
+    position: sticky;
+    top: 0; /* Menempatkan navbar di bagian atas layar */
+}
+
+.nav-underline {
+    display: flex;
+    padding: 5px 20px; /* Padding atas dan bawah, padding kiri kanan */
+}
+
+.nav-item {
+    margin-left: 15px; /* Jarak antar item nav */
+}
+
+.nav-link {
+    color: white; /* Warna teks putih */
+    margin-right: 10px;
+    text-decoration: none; /* Hilangkan garis bawah default dari link */
+}
+
+.nav-link:hover {
+    color: yellow; /* Warna teks kuning saat dihover */
+}
+
+/*
+HEADER */
+/* styles-daftar.css */
+
+.welcome-section {
+    background-image: url("https://shine.co.id/wp-content/uploads/2022/12/Institut-Bisnis-Dan-Informatika-Kesatuan.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 130px;
+    text-align: left; /* Align konten ke kiri */
+    position: relative; /* Position relative untuk menempatkan logo */
+    display: flex; /* Menggunakan Flexbox */
+    flex-direction: column; /* Mengatur arah konten menjadi kolom */
+    justify-content: center; /* Mengatur konten menjadi tengah secara vertikal */
+    align-items: flex-start; /* Mengatur konten menjadi kiri secara horizontal */
+}
+
+.welcome-section::before {
+    content: "";
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6c/LOGO_IBIK.png");
+    background-repeat: no-repeat; /* Hindari pengulangan gambar */
+    background-size: 100px; /* Ukuran logo */
+    background-position: left center; /* Posisi logo di sebelah kiri */
+    width: 100px; /* Lebar logo */
+    height: 100px; /* Tinggi logo */
+    position: absolute; /* Position absolut untuk logo */
+    left: 100px; /* Jarak dari tepi kiri */
+    top: 50px; /* Posisi vertikal logo lebih naik */
+    margin-left: 200px;
+    margin-top: 80px;
+}
+
+.welcome-section h1 {
+    font-weight: bold; /* Ketebalan teks h1 */
+    padding-left: 140px; /* Sesuaikan padding kiri untuk menyejajarkan dengan logo */
+    font-size: 45px;
+    color: #252858;
+    text-align: left;
+    margin-left: 160px;
+    margin-bottom: 10px; /* Margin bawah untuk memberikan ruang antara h1 dan h2 */
+}
+
+.welcome-section h2 {
+    font-size: 20px; /* Ukuran font h2 */
+    line-height: 1.5; /* Tinggi baris untuk memisahkan teks menjadi beberapa baris */
+    padding-left: 140px; /* Sesuaikan padding kiri untuk menyejajarkan dengan logo */
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    margin-left: 160px;
+    margin-bottom: 20px; /* Margin bawah untuk memberikan ruang antara h2 dan tombol */
+}
+
+/* button download */
+.btn-container {
+    padding: 10px 20px; /* Padding atas bawah 10px, padding kiri kanan 20px */
+    margin-left: 400px; /* Sesuaikan margin kiri untuk menyejajarkan dengan logo */
+    background-color: red;
+    border-radius: 25px;
+    color: white;
+    border: 3px solid white; /* Ketebalan 2px, warna ungu, solid style */
+    cursor: pointer; /* Mengubah ikon kursor menjadi tangan saat dihover */
+}
+
+.btn-container:hover {
+    color: yellow;
+}
+/*
+beasiswa */
+.beasiswa-container {
+    padding: 50px; /* Jarak kiri dari container */
+    display: flex; /* Mengatur tata letak flexbox */
+    align-items: flex-start; /* Posisi konten container di atas */
+    background-color: rgb(236, 231, 231);
+}
+
+.beasiswa-text-container {
+    margin-left: 80px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: left;
+}
+
+.beasiswa-container p {
+    margin: 0; /* Menghapus margin bawaan dari h1 */
+    color: #393c78;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.beasiswa-container p2 {
+    font-size: 30px; /* Ukuran font untuk paragraf */
+    margin-right: 10px; /* Memberikan jarak antara teks dan gambar */
+    font-weight: bold;
+}
+
+.img-container img {
+    /* margin: 40px; */
+    margin-top: 5px;
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Register Online */
+.online-container {
+    background-color: rgb(255, 247, 247);
+    display: flex;
+    justify-content: center; /* Pusatkan horizontal */
+    align-items: center; /* Pusatkan vertikal */
+    height: 100vh; /* Buat kontainer mengambil tinggi penuh layar */
+    text-align: center; /* Pusatkan teks dalam kontainer */
+}
+
+.text-container {
+    max-width: 600px; /* Atur lebar maksimal teks */
+    width: 100%; /* Buat teks responsif */
+}
+
+.text-container h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #393c78;
+    margin-bottom: 25px;
+}
+
+.text-container li,
+.text-container p {
+    color: #393c78;
+    text-align: left; /* Buat teks dalam list tetap rata kiri */
+    font-weight: bold;
+}
+
+.box-container {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 15px 18px rgba(0, 0, 0, 0.1);
+}

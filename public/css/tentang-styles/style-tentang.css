@@ -1,0 +1,166 @@
+/* header */
+.welcome-section {
+    background-image: url("https://shine.co.id/wp-content/uploads/2022/12/Institut-Bisnis-Dan-Informatika-Kesatuan.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    align-items: center;
+    position: relative; /* Position relative untuk menempatkan logo */
+    display: flex; /* Menggunakan Flexbox */
+    flex-direction: column; /* Mengatur arah konten menjadi kolom */
+    justify-content: center; /* Mengatur konten menjadi tengah secara vertikal */
+}
+
+.welcome-section h1 {
+    color: #393c78;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 10px 10px 12px black(0, 0, 0, 0.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* pilihan */
+.pilihan-container {
+    display: flex;
+    justify-content: space-around; /* Space out the columns evenly */
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 20px; /* Space between columns */
+}
+
+.pilihan-container div {
+    background-color: #d4d3d3; /* Background color for the box */
+    border: 1px solid #ccc; /* Border for the box */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a 3D effect */
+    flex: 1; /* Make all divs equal width */
+    max-width: 300px; /* Maximum width for the boxes */
+}
+
+.klik-action {
+    text-decoration: none; /* Remove underline from links */
+    color: #393c78; /* Color for links */
+    margin: 10px 0;
+    color: #393c78;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.klik-action:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* sejarah */
+#sejarah {
+    background-color: #f9f9f9; /* Background color for the box */
+    border: 1px solid #ccc; /* Border for the box */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a 3D effect */
+    max-width: 950px; /* Maximum width for the container */
+    margin: 20px auto; /* Center the container horizontally */
+    text-align: center; /* Center the h1 text */
+}
+
+#sejarah h1 {
+    font-weight: bold;
+    color: #393c78;
+    margin-bottom: 20px;
+}
+
+.sejarah-content {
+    display: flex;
+    align-items: flex-start; /* Align items at the start */
+    justify-content: space-between; /* Space out the image and text */
+    text-align: left; /* Align text to the left */
+}
+
+.sejarah-content img {
+    max-width: 300px; /* Limit the image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between the image and the text */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sejarah-content p {
+    flex: 1; /* Allow the paragraph to take remaining space */
+    color: #393c78;
+}
+
+#sejarah button {
+    display: block; /* Ensure button takes its own line */
+    margin: 20px auto 0; /* Center the button horizontally with margin */
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #393c78; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+#sejarah button:hover {
+    background-color: #252858; /* Darker shade on hover */
+}
+/*
+visi misi dan contact */
+.visikontak-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+}
+
+#VisiMisi {
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    order: 2; /* Posisikan di sebelah kanan */
+    background-color: #f9f9f9;
+}
+
+#VisiMisi h1 {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: #393c78;
+}
+
+#VisiMisi p {
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.contact-info {
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    order: 1; /* Posisikan di sebelah kiri */
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Menyelaraskan teks secara vertikal di tengah */
+    align-items: center; /* Menyelaraskan teks secara horizontal di tengah */
+    text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+.contact-info p {
+    color: #393c78;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.contact-info p::after {
+    content: "\A";
+    white-space: pre;
+}
+
+.italic {
+    font-style: italic;
+}

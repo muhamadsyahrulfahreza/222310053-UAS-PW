@@ -1,0 +1,44 @@
+body {
+    padding-top: 60px; /* Add enough padding to prevent content from being hidden behind the fixed nav */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Make the nav fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make sure the nav spans the full width of the viewport */
+    background-color: #393c78;
+    z-index: 1000; /* Ensure the nav stays on top of other content */
+    padding: 10px 20px; /* Add padding to create space inside the nav bar */
+}
+
+.nav-link {
+    color: #f9f4f4 !important; /* Set the text color of nav links to black */
+    margin: 0 5px; /* Add margin to create space between links */
+}
+
+.nav-link.active {
+    background-color: black !important;
+    color: #f9f4f4 !important;
+    border-radius: 20px !important;
+}
+
+.nav-link:hover {
+    color: yellow !important; /* Change text color to yellow on hover even when active */
+}
+
+.nav-link.daftar-disini:hover {
+    color: red !important; /* Change text color to yellow on hover even when active */
+}
+
+.nav-link.daftar-disini {
+    position: absolute;
+    right: 20px;
+    background-color: #f9f4f4 !important;
+    color: black !important; /* Keep the text color of this button black */
+    border-radius: 30px !important;
+    padding: 0.5rem 1rem;
+}
